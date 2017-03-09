@@ -1,0 +1,14 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/content/content"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#000000",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "乐租",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    }
+}

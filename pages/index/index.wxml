@@ -1,0 +1,43 @@
+<view>
+    <view class="index">
+        <view class="index-top">
+            <image src="../../images/p1-top.png"></image>
+        </view>
+
+        <view class="index-content">
+            <view class="ctn-box">
+                <view class="box-top">
+                    <text>说出你的要求，小仙帮你找美房哦~</text>
+                    <image src="../../images/p1-tit.png"></image>
+                </view>
+
+                <view class="box-content ">
+                    <view class="box-item flex-wrp">
+                        <label class="flex-item"> 当前月薪 </label>
+                        <input bindchange="bindchangeInput" type="number" id="currentSalary" class="item2 flex-item" />
+                    </view>  
+                    <view class="box-item flex-wrp">
+                        <label class="flex-item"> 期待户型 </label>
+                        <picker bindchange="bindPickerChange" id="houseType" class="item2 flex-item" range="{{houseType}}" value="{{houseTypeIndex}}">
+                            <view class="picker">
+                                {{houseType[houseTypeIndex]}}
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="box-item flex-wrp">
+                        <label class="flex-item"> 工作地标 </label>
+                        <input bindchange="bindchangeInput" class="item2 flex-item" id="workPalce" value="徐家汇"/>
+                    </view>
+                </view>
+
+                <view class="box-bottom">
+                    <button class="box-btn" bindtap="findHouse">快速帮我找美房</button>
+                </view>
+            </view>
+        </view>
+
+        <view class="index-bom">
+            <image src="../../images/p1-bom.png"></image>
+        </view>
+    </view>
+</view>

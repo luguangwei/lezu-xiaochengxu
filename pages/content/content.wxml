@@ -1,0 +1,21 @@
+<scroll-view  scroll-x="true" class="tab-nav " >
+    <view class=" flex-wrp">
+        <view wx:for="{{[0,1,2,3,4]}}" wx:key="*this" class="nav-item  flex-item" >
+            <view>
+                <image class="{{navClass[index]}}"  bindtap="swiperTab" data-num="{{index}}"  src="{{currentImg[index]}}"></image>
+            </view>
+            <view>{{ navTxt[index] }}</view>
+        </view>
+    </view>
+</scroll-view>
+
+
+
+<include src="include/recommend.wxml" />
+<include src="include/station.wxml" />
+<include src="include/security.wxml" />
+<include src="include/around.wxml" />
+<include src="include/traffic.wxml" />
+
+
+

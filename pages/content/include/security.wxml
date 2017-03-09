@@ -1,0 +1,40 @@
+<view class="page5" hidden="{{tabHidden[4]}}">
+    <view class="img-box-line">
+        <image class="line1" src="/images/sign.png"></image>
+        <image class="line2"  src="/images/sign.png"></image>
+    </view>
+    <view class="box-top">
+        <view class="title">小区治安评级</view>
+        <view class="star-box">
+            <image src="src" wx:for="{{starBox}}" src="{{item}}"  class="star"></image>
+        </view>
+    </view>
+
+
+    <view class="security flex-wrp">
+        <view class="security-detail flex-item" >
+            <view>
+                <text class="title">安保措施</text><text class="em"></text>
+            </view>
+            <text  wx:for="{{security.security}}">{{item}}</text>
+        </view>
+        <view class="security-img flex-item">
+            <image src="/images/monitor.png"></image>
+        </view>
+
+    </view>
+
+
+    <view class="security flex-wrp text-left">
+        <view class="security-img flex-item">
+            <image src="/images/security.png"></image>
+        </view>
+        <view class="security-detail flex-item" >
+            <view>
+                <text class="em"></text><text class="title">安保措施</text>
+            </view>
+            <text  wx:for="{{security.steal}}">{{item}}</text>
+        </view>
+        
+    </view>
+</view>

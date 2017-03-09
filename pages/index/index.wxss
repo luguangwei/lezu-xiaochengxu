@@ -1,0 +1,91 @@
+page{
+    background: #f7f7ff;
+}
+
+.index .index-top image{
+    width: 710rpx;
+    height: 200rpx;
+    margin: 50rpx 10rpx 0;
+    position: relative;
+    z-index: -1;
+}
+
+.index-content {
+    
+}
+
+.index-content .ctn-box{
+    width: 570rpx;
+    margin: -22rpx 60rpx 0;
+    background: #fff;
+    padding: 50rpx 30rpx;
+    box-shadow: 0 0 20rpx 4rpx  #becee7;
+    border-radius: 10rpx;
+}
+
+.index-content .ctn-box .box-top text{
+    display: block;
+    background:#d9e8fb;
+    font-size: 28rpx;
+    padding: 15rpx 0; 
+    text-align: center;
+    margin: 0 80rpx 0 0;
+    border-radius: 25rpx;
+    color: #6994c3;
+    font-weight: 500;
+}
+
+.index-content .ctn-box .box-top image{
+   height: 140rpx;
+   width:610rpx;
+   margin: -35rpx 0 0;
+}
+
+.index-content  .box-content{
+    font-size: 28rpx;
+}
+
+.index-content  .box-content .box-item{
+    margin: 20rpx 0 60rpx;
+    padding: 0 50rpx; 
+}
+
+.index-content  .box-content label{
+    color:#666;
+    line-height: 54rpx;
+    font-size: 28rpx;
+    text-align: left;
+}
+
+.index-content  .box-content input,picker{
+    border-bottom: 2rpx solid #ccc;
+    text-align: left;
+    font-size: 28rpx;
+    color: #666;
+}
+
+ .box-content .picker{
+    text-align: left;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.index-content  .box-content .item2{
+    width: 200rpx;
+    padding: 0 30rpx;
+}
+
+.index-content  .box-bottom  .box-btn{
+    background: #6994c3;
+    color:#fff;
+    font-size: 30rpx;
+    font-weight: 600;
+    margin: 80rpx 0 30rpx;
+}
+
+
+.index .index-bom image{
+    width: 630rpx;
+    height: 150rpx;
+    margin: 60rpx 60rpx 0;
+}

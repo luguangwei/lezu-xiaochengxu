@@ -1,0 +1,30 @@
+
+<view class="page1" hidden="{{tabHidden[0]}}">
+    <image class="page1-tip" src="{{recommend.imgbx.tipsImg}}"></image>
+    <view class="box">
+        <image class="lpInfo-img" src="{{recommend.lpInfo.urlImg}}"></image>
+        <view class="lpInfo-txt flex-wrp">
+            <text class="lpInfo-name flex-item">{{recommend.lpInfo.name}}</text>
+            <text class="lpInfo-price flex-item">{{recommend.lpInfo.price}}</text>
+        </view>
+    </view>
+
+    <view class="box box-snd flex-wrp">
+        <view class="custInfo flex-item"> 
+            <text class="custInfo-title">租客分析</text>
+            <image class="custInfo-icon" src="{{recommend.imgbx.situation.one}}"></image>
+            <progress percent="{{recommend.custInfo.rent.persent}}" color="#039cff"/>
+            <text class="custInfo-rent ">{{recommend.custInfo.rent.persent}}%</text>
+            <text class="custInfo-rent ">{{recommend.custInfo.rent.desc}}</text>
+        </view>
+
+         <view class="custInfo flex-item snd-item"> 
+            <text class="custInfo-title">小区人员情况</text>
+            <image class="custInfo-icon" src="{{recommend.imgbx.situation.two}}"></image>
+            <progress percent="{{recommend.custInfo.area.persent}}" color="#ffae03"/>
+            <text class="custInfo-area ">{{recommend.custInfo.area.persent}}%</text>
+            <text class="custInfo-area ">{{recommend.custInfo.rent.desc}}</text>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,79 @@
+<view class=" page4  page3" hidden="{{tabHidden[2]}}">
+
+    <view class="search flex-wrp">
+        <view class="search-img flex-item">
+            <image src="/images/fromTo.png"></image>
+        </view>
+
+         <view  class="search-input flex-item">
+            <view class="input-item bottom-line">
+                <label>起始点:</label>
+                <input placeholder="小区名称"/>
+            </view>
+            <view class="input-item">
+                <label>目的地:</label>
+                <input placeholder="徐家汇商圈"/>
+            </view>
+        </view>
+
+        <view class="seach-pay flex-item">
+            <text class="pay-num ">{{traffic.pay}}RMB</text>
+            <text>月均交通支出</text>
+        </view>
+    </view>
+
+
+    <map class="map "  longitude="{{traffic.longitude}}" latitude="{{traffic.latitude}}" scale="{{traffic.scale}}" markers="{{traffic.markers}}"/>
+    <view class="around-list">
+        <view class="around-item flex-wrp">
+            <view class="around-icon flex-item">
+                <image src="/images/taxi.png"></image>
+            </view>
+
+            <view class="around-ctn  flex-item">
+                <text class="labels">自驾出行</text>
+                <text>{{traffic.taxi.pret}}的人选择自驾出行</text>
+            </view>
+
+            <view class="around-ctn around-time  flex-item">
+                <text class="labels purple">{{traffic.taxi.time}}min</text>
+                <text >{{traffic.distance}}KM</text>
+            </view>
+        </view>
+
+        <view class="around-item flex-wrp">
+            <view class="around-icon flex-item">
+                <image src="/images/bus.png"></image>
+            </view>
+
+            <view class="around-ctn  flex-item">
+                <text class="labels">轨交出行</text>
+                <text>{{traffic.bus.pret}}的人选择轨交出行</text>
+            </view>
+
+            <view class="around-ctn around-time  flex-item">
+                <text class="labels green">{{traffic.bus.time}}min</text>
+                <text >{{traffic.distance}}KM</text>
+            </view>
+        </view>
+
+        <view class="around-item flex-wrp">
+            <view class="around-icon flex-item">
+                <image src="/images/subway.png"></image>
+            </view>
+
+            <view class="around-ctn  flex-item">
+                <text class="labels">地铁出行</text>
+                <text>{{traffic.subway.pret}}的人选择地铁出行</text>
+            </view>
+
+            <view class="around-ctn around-time  flex-item">
+                <text class="labels blue">{{traffic.subway.time}}min</text>
+                <text >{{traffic.distance}}KM</text>
+            </view>
+        </view>
+        
+   </view> 
+
+
+</view> 

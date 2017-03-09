@@ -1,0 +1,69 @@
+<view class="page4" hidden="{{tabHidden[3]}}">
+    <map class="maps"  longitude="{{around.longitude}}" latitude="{{around.latitude}}" scale="{{around.scale}}" markers="{{around.markers}}"/>
+    <view class="around-list">
+        <view class="around-item flex-wrp">
+            <view class="around-icon flex-item">
+                <image src="/images/bussDistrict.png"></image>
+            </view>
+
+            <view class="around-ctn  flex-item">
+                <text class="labels">附近商圈</text>
+                <text>{{around.business.desc}}</text>
+            </view>
+
+            <view class="around-ctn around-time  flex-item">
+                <text class="labels yellow">{{around.business.time}}</text>
+                <text >{{around.business.trafficaffic}}</text>
+            </view>
+        </view>
+
+        <view class="around-item flex-wrp">
+            <view class="around-icon flex-item">
+                <image src="/images/hospital.png"></image>
+            </view>
+
+            <view class="around-ctn  flex-item">
+                <text class="labels">附近医院</text>
+                <text>{{around.hospital.desc}}</text>
+            </view>
+
+            <view class="around-ctn around-time  flex-item">
+                <text class="labels green">{{around.hospital.time}}</text>
+                <text >{{around.hospital.trafficaffic}}</text>
+            </view>
+        </view>
+
+        <view class="around-item flex-wrp">
+            <view class="around-icon flex-item">
+                <image src="/images/supMarket.png"></image>
+            </view>
+
+            <view class="around-ctn  flex-item">
+                <text class="labels">附近超市</text>
+                <text>{{around.superMarket.desc}}</text>
+            </view>
+
+            <view class="around-ctn around-time  flex-item">
+                <text class="labels red">{{around.superMarket.time}}</text>
+                <text >{{around.superMarket.trafficaffic}}</text>
+            </view>
+        </view>
+
+        <view class="around-item flex-wrp">
+            <view class="around-icon flex-item">
+                <image src="/images/vegMarket.png"></image>
+            </view>
+
+            <view class="around-ctn  flex-item">
+                <text class="labels">附近菜场</text>
+                <text>{{around.foodMarket.desc}}</text>
+            </view>
+
+            <view class="around-ctn around-time  flex-item">
+                <text class="labels blue">{{around.foodMarket.time}}</text>
+                <text >{{around.foodMarket.trafficaffic}}</text>
+            </view>
+        </view>
+        
+    </view>
+</view>

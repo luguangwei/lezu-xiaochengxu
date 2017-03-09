@@ -1,0 +1,48 @@
+<view class="page2" hidden="{{tabHidden[1]}}">
+    <view class="page2-top">
+        <image src="{{station.topImg}}"></image>
+    </view>
+
+    <view class="page2-content">
+        <view class="ctn-item averagePrice"> 
+            <view  class="flex-wrp">
+                <view class="labels flex-item">平均租金（元/㎡/月）</view>
+                <view class="price flex-item">{{station.averagePrice}}元</view>
+            </view>
+            <view class="averagePriceInfo">{{station.averagePriceInfo}}</view>
+        </view>
+
+        <view class="ctn-item rent-type"> 
+            <view class="labels ">租赁方式</view>
+            <view class="persent-all">
+                <view class="persent" style="width:{{station.renttype.group}}"></view>
+            </view>
+            <view class="persent-tip">
+                <view class="em group-tip"></view>{{station.renttype.group}}合租
+                <view class="em full-tip"></view>{{station.renttype.full}}整租
+            </view>
+        </view>
+
+        <view class="ctn-item rent-type"> 
+            <view class="labels ">租赁方式</view>
+            <view class="persent-all simp-tip flex-wrp">
+                <view class="persent higth-tip " style="width:{{station.finish.higth}}"></view>
+                <view class="persent norml-tip " style="width:{{station.finish.norml}}"></view>
+            </view>
+            <view class="persent-tip ">
+                <view class="em higth-tip"></view>{{station.finish.higth}}精装
+                <view class="em norml-tip"></view>{{station.finish.norml}}普通装修
+                <view class="em simp-tip"></view>{{station.finish.simp}}毛坯
+            </view>
+        </view>
+
+        <view class="ctn-item averagePrice no-bottom"> 
+            <view  class="flex-wrp">
+                <view class="labels flex-item">平均月支出</view>
+                <view class="price flex-item expend-color">{{station.expend.totl}}元</view>
+            </view>
+            <view class="averagePriceInfo">{{station.expend.desc}}</view>
+        </view>
+
+    </view>
+</view>
