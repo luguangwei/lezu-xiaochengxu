@@ -1,5 +1,5 @@
 App({
     onLaunch:function(){
-        console.log("onLaunch")
+        console.log("onLaunch");
     }
 })
